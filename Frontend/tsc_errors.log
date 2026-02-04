@@ -1,0 +1,42 @@
+﻿src/components/AlertsDropdown.tsx(59,24): error TS2345: Argument of type 'ApiResponse<{ alertas: Alerta[]; }>' is not assignable to parameter of type 'SetStateAction<AlertasData | null>'.
+src/components/ErrorBoundary.tsx(87,26): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/pages/Alertas.tsx(82,24): error TS2345: Argument of type 'ApiResponse<{ alertas: Alerta[]; }>' is not assignable to parameter of type 'SetStateAction<AlertasData | null>'.
+src/pages/Auditoria.tsx(77,23): error TS2339: Property 'entidades' does not exist on type 'ApiResponse<{ entidades: string[]; }>'.
+src/pages/Auditoria.tsx(77,55): error TS2339: Property 'entidades' does not exist on type 'ApiResponse<{ entidades: string[]; }>'.
+src/pages/Auditoria.tsx(78,35): error TS2339: Property 'entidades' does not exist on type 'ApiResponse<{ entidades: string[]; }>'.
+src/pages/Auditoria.tsx(100,31): error TS2339: Property 'items' does not exist on type 'PaginatedResponse<RegistroAuditoria>'.
+src/pages/Auditoria.tsx(103,29): error TS2551: Property 'pagination' does not exist on type 'PaginatedResponse<RegistroAuditoria>'. Did you mean 'paginacion'?
+src/pages/Auditoria.tsx(104,34): error TS2551: Property 'pagination' does not exist on type 'PaginatedResponse<RegistroAuditoria>'. Did you mean 'paginacion'?
+src/pages/Auditoria.tsx(122,34): error TS2339: Property 'registro' does not exist on type 'ApiResponse<{ registro: RegistroAuditoria; }>'.
+src/pages/Choferes.tsx(136,25): error TS2345: Argument of type 'Chofer' is not assignable to parameter of type 'SetStateAction<{ nombres: string; apellidos: string; documentoId: string; telefono: string; correo: string; estado: string; fechaVencimientoLicencia: string; modalidadPago: string; metodoPago: string; banco: string; numeroCuenta: string; sueldoMensual: number; diaPago: number; pagoQuincenal: boolean; }>'.
+  Type 'Chofer' is not assignable to type '{ nombres: string; apellidos: string; documentoId: string; telefono: string; correo: string; estado: string; fechaVencimientoLicencia: string; modalidadPago: string; metodoPago: string; banco: string; numeroCuenta: string; sueldoMensual: number; diaPago: number; pagoQuincenal: boolean; }'.
+    Types of property 'telefono' are incompatible.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
+src/pages/Mantenimientos.tsx(102,60): error TS2345: Argument of type '{ vehiculoId: string; fechaDesde: string; fechaHasta: string; tipo: string; estado: string; }' is not assignable to parameter of type 'FiltrosMantenimiento'.
+  Types of property 'vehiculoId' are incompatible.
+    Type 'string' is not assignable to type 'number'.
+src/pages/Mantenimientos.tsx(103,31): error TS2345: Argument of type 'Mantenimiento[]' is not assignable to parameter of type 'SetStateAction<Mantenimiento[]>'.
+  Type 'import("C:/Users/Jairon/Desktop/Backud/Frontend/src/types/api.types").Mantenimiento[]' is not assignable to type 'Mantenimiento[]'.
+    Type 'import("C:/Users/Jairon/Desktop/Backud/Frontend/src/types/api.types").Mantenimiento' is not assignable to type 'Mantenimiento'.
+      Types of property 'vehiculo' are incompatible.
+        Type 'Vehiculo | undefined' is not assignable to type 'Vehiculo'.
+          Type 'undefined' is not assignable to type 'Vehiculo'.
+src/pages/Mantenimientos.tsx(114,26): error TS2345: Argument of type 'Vehiculo[] | undefined' is not assignable to parameter of type 'SetStateAction<Vehiculo[]>'.
+  Type 'undefined' is not assignable to type 'SetStateAction<Vehiculo[]>'.
+src/pages/PagosChoferes.tsx(113,57): error TS2345: Argument of type '{ choferId: string; fechaDesde: string; fechaHasta: string; estado: string; }' is not assignable to parameter of type 'FiltrosPagoChofer'.
+  Types of property 'choferId' are incompatible.
+    Type 'string' is not assignable to type 'number'.
+src/pages/PagosChoferes.tsx(114,22): error TS2345: Argument of type 'PagoChofer[]' is not assignable to parameter of type 'SetStateAction<PagoChofer[]>'.
+  Type 'import("C:/Users/Jairon/Desktop/Backud/Frontend/src/types/api.types").PagoChofer[]' is not assignable to type 'PagoChofer[]'.
+    Type 'import("C:/Users/Jairon/Desktop/Backud/Frontend/src/types/api.types").PagoChofer' is not assignable to type 'PagoChofer'.
+      Types of property 'chofer' are incompatible.
+        Type 'Chofer | undefined' is not assignable to type 'Chofer'.
+          Type 'undefined' is not assignable to type 'Chofer'.
+src/pages/Reportes.tsx(62,26): error TS2345: Argument of type 'Vehiculo[] | undefined' is not assignable to parameter of type 'SetStateAction<any[]>'.
+  Type 'undefined' is not assignable to type 'SetStateAction<any[]>'.
+src/pages/Vehiculos.tsx(128,25): error TS2345: Argument of type '{ fechaUltimoMantenimiento: string; fechaProximoMantenimiento: string; fechaVencimientoSoat: string; fechaVencimientoSeguro: string; fechaVencimientoMatricula: string; id: number; ... 8 more ...; observaciones?: string; }' is not assignable to parameter of type 'SetStateAction<{ placa: string; marca: string; modelo: string; anio: number; tipo: string; capacidad: string; estado: string; kilometrajeActual: string | number; observaciones: string; fechaUltimoMantenimiento: string; fechaProximoMantenimiento: string; fechaVencimientoSoat: string; fechaVencimientoSeguro: string; f...'.
+  Type '{ fechaUltimoMantenimiento: string; fechaProximoMantenimiento: string; fechaVencimientoSoat: string; fechaVencimientoSeguro: string; fechaVencimientoMatricula: string; id: number; ... 8 more ...; observaciones?: string; }' is not assignable to type '{ placa: string; marca: string; modelo: string; anio: number; tipo: string; capacidad: string; estado: string; kilometrajeActual: string | number; observaciones: string; fechaUltimoMantenimiento: string; fechaProximoMantenimiento: string; fechaVencimientoSoat: string; fechaVencimientoSeguro: string; fechaVencimiento...'.
+    Types of property 'observaciones' are incompatible.
+      Type 'string | undefined' is not assignable to type 'string'.
+        Type 'undefined' is not assignable to type 'string'.
